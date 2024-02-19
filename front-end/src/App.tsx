@@ -1,14 +1,9 @@
-import ListGroup from "./components/ListGroup";
+import Button from "./components/Button";
 
 function App() {
-  const items = ["Banana", "Apple", "Orange", "Grapes", "Melons"];
   return (
     <>
-      <ListGroup
-        items={items}
-        heading="A list of Fruits"
-        onSelectItem={(item) => console.log(item)}
-      ></ListGroup>
+      <Button onClick={() => console.log("clicked!")}>Click me!</Button>
     </>
   );
 }
