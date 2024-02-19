@@ -4,7 +4,7 @@ React Beginner
 
 - [x] Getting Started
 - [x] Getting Started with React
-- [] Building Components
+- [x] Building Components
 - [] Styling Components
 - [] Managing Component State
 - [] Building Forms
