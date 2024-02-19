@@ -1,6 +1,7 @@
 import { useState } from "react";
 // import styles from "./ListGroup.module.css";
 import styled from "styled-components";
+import { CiCircleList } from "react-icons/ci";
 
 interface ListGroupProps {
   items: string[];
@@ -27,6 +28,7 @@ function ListGroup({ items, heading, onSelectItem }: ListGroupProps) {
 
   return (
     <>
+      <CiCircleList />
       <h1>This is a list for {heading}</h1>
 
       <List>
