@@ -1,42 +1,21 @@
-import { useState } from "react";
+import ExpandableText from "./components/ExpandableText";
 
 function App() {
-  // const [game, setGame] = useState({
-  //   id: 1,
-  //   player: {
-  //     name: "John",
-  //   },
-  // });
-
-  // const [pizza, setPizza] = useState({
-  //   name: "Spicy Pepperoni",
-  //   toppings: ["Mushroom"],
-  // });
-
-  const [cart, setCart] = useState({
-    discount: 0.1,
-    items: [
-      { id: 1, title: "P1", quantity: 1 },
-      { id: 2, title: "P2", quantity: 2 },
-    ],
-  });
-
-  const handleClick = () => {
-    // setPizza({
-    //   ...pizza,
-    //   toppings: [...pizza.toppings, "Cheeze"],
-    // });
-
-    setCart({
-      ...cart,
-      items: cart.items.map((item) =>
-        item.id === 1 ? { ...item, quantity: 2 } : item
-      ),
-    });
-  };
   return (
     <>
-      <button onClick={handleClick}>Update</button>
+      <ExpandableText maxChars={100}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        deleniti corporis nemo architecto nostrum accusamus natus esse sunt, quo
+        illo asperiores ab dignissimos maiores dicta? Beatae tenetur quidem
+        atque saepe aliquid blanditiis, explicabo rerum accusamus consequuntur,
+        perspiciatis asperiores labore, non eligendi delectus minima deleniti
+        nisi deserunt. Qui, voluptatem odio? Labore quasi, aut quia optio esse
+        dicta ipsum excepturi quos earum ipsam, fuga harum cum voluptates autem
+        totam. Quibusdam magni laudantium minus, est, nulla nemo neque placeat
+        odit quasi illo, alias impedit mollitia. Possimus quaerat assumenda
+        impedit voluptatum deserunt, nam facere quia officiis veritatis ipsum
+        id, nesciunt pariatur minima doloribus incidunt.
+      </ExpandableText>
     </>
   );
 }
